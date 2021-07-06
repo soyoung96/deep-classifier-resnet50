@@ -37,7 +37,7 @@ but layer is more deeper than original
 
 ## 3. Batch Normalization
 
-why gradient vanishing occur?,
+why does gradient vanishing occurr?,
 By some paper, internal covarrience shift cause gradient vanishing problem!
 
 so we need to normalize Conv's output
