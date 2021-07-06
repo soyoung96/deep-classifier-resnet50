@@ -19,7 +19,7 @@ Skip connection is solution of Gradient Vanishing
 let ouput and input are H(x) and x for each, then the model is trained by F(x)=H(x)-x
 this is reason why resnet is called Residual Networks
 
-### 2. Bottleneck Design : more deeper but less calculation
+## 2. Bottleneck Design : more deeper but less calculation
 
 ![image](https://user-images.githubusercontent.com/61177857/124567193-be9ae580-de7e-11eb-9aa1-201d8c374cbc.png)
 
@@ -35,7 +35,7 @@ this spend less time than original (because of less calc)
 but layer is more deeper than original 
 (so more activation ftn avilable=>good)
 
-### 3. Batch Normalization
+## 3. Batch Normalization
 
 why gradient vanishing occur?,
 By some paper, internal covarrience shift cause gradient vanishing problem!
