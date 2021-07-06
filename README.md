@@ -12,11 +12,11 @@
 ![image](https://user-images.githubusercontent.com/61177857/124564958-885c6680-de7c-11eb-8f12-f7e84a64b6aa.png)
 
 Before Resnet had been invented, 
-there is Gradient Vanising problem if layer is more deeper
+there is Gradient Vanishing problem if layer is more deeper
 
-Skip connection is solution of Gradient Vanishing
+Skip connection is solution of Gradient Vanishing problem
 
-let ouput and input are H(x) and x for each, then the model is trained by F(x)=H(x)-x
+let output and input are H(x) and x for each, then the model is trained by F(x)=H(x)-x
 this is reason why resnet is called Residual Networks
 
 ## 2. Bottleneck Design : more deeper but less calculation
