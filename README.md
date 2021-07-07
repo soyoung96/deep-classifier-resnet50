@@ -37,11 +37,39 @@ but layer is more deeper than original
 
 ## 3. Batch Normalization
 
-why does gradient vanishing occurr?,
+why does gradient vanishing occurr?
 By some paper, internal covarrience shift cause gradient vanishing problem!
 
 so we need to normalize Conv's output
 this is reason why batch normalization is needed
+
+![image](https://user-images.githubusercontent.com/61177857/124691304-98288900-df16-11eb-8464-4647e16f898a.png)
+
+then...
+why do we need to add additionalγ,β standard Normalization?
+because of two problem!
+
+1. bias is disappear
+2. standard Normalization lose non-linear feature from activation funtion
+
+### reason why 1. bias is disappear
+y = Wx+b (W:weight,x:input,b:bias)
+
+E(y) = WE(x)+b
+y-E(y) = W(x-E(x)) => bias out!
+
+### reason why 2. standard Normalization lose non-linear feature from activation funtion
+
+about sigmoid ftn,
+
+![image](https://user-images.githubusercontent.com/61177857/124692319-5d275500-df18-11eb-8727-8d9731f9873a.png)
+
+if we apply standard Normalization then output will pass by sigmoid ftn.
+but standard Normalization's result is focused on middle by 0
+==> this cause to lose non-linear problem
+
+https://eehoeskrap.tistory.com/430
+
 
 
 
